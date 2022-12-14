@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <h1 class="header__logo-text">MY WEATHER</h1>
+            </div>
+            <div class="header__search">
+                <form action="" id="search" name="search">
+                    <label for="text"></label>
+                    <input type="text" placeholder="Find city" id="searchInput">
+                </form>
+            </div>
+        </div>
+
+        <!-- TABS -->
+
+        <div class="header__tabs">
+            <div class="header__tabs-main">
+                <h3 class="header__tabs-text">Today</h3>
+            </div>
+            <div class="header__tabs-main">
+                <!-- <button type="button" id="btn" class="header__tabs-text">
+                    5-day forecast
+                </button> -->
+                <div id="btn" class="header__tabs-text">
+                    <h3>5-day forecast</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CURRENT WEATHER -->
+
+    <section class="current">
+        <div class="current__header">
+            <div class="current__logo">
+                <h2 class="current__logo-text">CURRENT WEATHER</h2>
+            </div>
+            <div class="current__data">
+                <h2 class="current__data"></h2>
+            </div>
+        </div>
+
+        <div class="current__main">
+            <div class="current__weather">
+                <div class="current__weather-img"> 
+                   <img src="" alt="" id="current__weather-img-main">
+                </div>
+                <p class="current__weather-text"></p>
+            </div>
+
+            <div class="current__temp">
+                <h3 class="current__temp-main"></h3>
+                <p class="current__temp-likefeel">Reel Feel <span class="current__likefeel"></span></p>
+            </div>
+
+            <div class="current__suntime">
+                <div class="current__suntime-main">
+                    <div class="current__sunrise suntime"><p>Sunrise:</p></div> <div class="current__sunrise-main"></div>
+                </div>
+                <div class="current__suntime-main">
+                    <div class="current__sunset suntime"><p>Sunset:</p></div> <div class="current__sunset-main"></div>
+                </div>
+                <div class="current__suntime-main">
+                    <div class="current__duration suntime"><p>Duration:</p></div> <div class="current__duration-main"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLE WEATHER -->
+
+    <section class="table">
+        <h2 class="hourly__weather">HOURLY</h2>
+        <table class="table__main">
+
+            <colgroup>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="today">TODAY</th>
+                    <th class="table__time-1"></th>
+                    <th class="table__time-2"></th>
+                    <th class="table__time-3"></th>
+                    <th class="table__time-4"></th>
+                    <th class="table__time-5"></th>
+                    <th class="table__time-6"></th>
+                </tr>
+    
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td class="forecast">Forecast</td>
+                    <td>
+                        <div class="forecast__img-1">
+                            <img src="" alt="" class="forecast__img-main-1">
+                        </div>
+                        <div class="table__forecast-1"></div>
+                    </td>
+                    <td>
+                        <div class="forecast__img-2">
+                            <img src="" alt="" class="forecast__img-main-2">
+                        </div>
+                        <div class="table__forecast-2"></div>
+                    </td>
+                    <td>
+                        <div class="forecast__img-3">
+                            <img src="" alt="" class="forecast__img-main-3">
+                        </div>
+                        <div class="table__forecast-3"></div>
+                    </td>
+                    <td>
+                        <div class="forecast__img-4">
+                            <img src="" alt="" class="forecast__img-main-4">
+                        </div>
+                        <div class="table__forecast-4"></div>
+                    </td>
+                    <td>
+                        <div class="forecast__img-5">
+                            <img src="" alt="" class="forecast__img-main-5">
+                        </div>
+                        <div class="table__forecast-5"></div>
+                    </td>
+                    <td>
+                        <div class="forecast__img-6">
+                            <img src="" alt="" class="forecast__img-main-6">
+                        </div>
+                        <div class="table__forecast-6"></div>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>Temp (°C)</td>
+                    <td class="table__temp-1"></td>
+                    <td class="table__temp-2"></td>
+                    <td class="table__temp-3"></td>
+                    <td class="table__temp-4"></td>
+                    <td class="table__temp-5"></td>
+                    <td class="table__temp-6"></td>
+                </tr>
+    
+                <tr>
+                    <td>RealFeel</td>
+                    <td class="table__realFeel-1"></td>
+                    <td class="table__realFeel-2"></td>
+                    <td class="table__realFeel-3"></td>
+                    <td class="table__realFeel-4"></td>
+                    <td class="table__realFeel-5"></td>
+                    <td class="table__realFeel-6"></td>
+                </tr>
+    
+                <tr>
+                    <td>Wind (KM/H)</td>
+                    <td class="table__wind-1"></td>
+                    <td class="table__wind-2"></td>
+                    <td class="table__wind-3"></td>
+                    <td class="table__wind-4"></td>
+                    <td class="table__wind-5"></td>
+                    <td class="table__wind-6"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <div class="cards">
+
+    </div>
+    
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/hourlyWeather.js"></script>
+    <script type="module" src="./js/five_day_weather.js"></script>
+</body>
+</html>

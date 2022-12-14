@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+h1, h2, h3{
+    margin: 0;
+}
+html {
+    background-color: rgba(141, 138, 138, 0.699);
+}
+.header {
+    font-family: sans-serif;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: rgb(227, 230, 233);
+}
+.header__logo-text{
+    color: rgb(100, 196, 164);
+}
+.header__search {
+    display: flex;
+    align-items: center;
+}
+#search__input {
+    padding: 15px;
+    width: 250px;
+}
+.header__tabs {
+    display: flex;
+    background-color: rgb(31, 29, 29);
+}
+.header__tabs-main {
+    margin: 0 20px;
+    padding: 10px 20px;
+    color: rgb(238, 238, 216);
+}
+
+
+/* CURRENT */
+
+
+.current {
+    padding: 20px;
+    margin: 20px 20px;
+    background-color: rgb(227, 230, 233);
+    font-family: sans-serif;
+}
+.current__header {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(100, 196, 164);
+    padding-bottom: 20px;
+}
+.current__data {
+    font-size: 20px;
+    font-weight: 600;
+}
+.current__main {
+    display: flex;
+    justify-content: space-around;
+}
+.current__weather {
+    text-align: center;
+}
+.curretn__weather-text {
+    text-align: center;
+}
+#current__weather-img-main {
+    width: 70px;
+    height: 70px;
+}
+
+.current__temp-main {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+.current__suntime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.current__suntime-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.suntime {
+    padding-right: 10px;
+}
+
+td {
+    padding: 10px;
+}
+th{
+    padding: 10px;
+    text-align: left;
+    color: grey;
+    font-weight: 500;
+}
+.table {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(227, 230, 233);
+    font-family: sans-serif;
+}
+.today {
+    color: black;
+}
+.hourly__weather{
+    color: rgb(100, 196, 164);
+    padding-bottom: 20px;
+}
+.table__main {
+    width: 100%;
+}
+.forecast {
+    /* text-align: end; */
+}
+td:first-of-type {
+    color: grey;
+}
